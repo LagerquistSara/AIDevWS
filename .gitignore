@@ -1,0 +1,23 @@
+# Facilitator-only material (not shared with participants)
+facilitator/
+*.pptx
+WORKSHOP-PLAN.md
+
+# Build workspace for the Event Check-in app (environment-specific URLs, ids and logs)
+event-checkin-app/build/
+
+# Build output and dependencies
+bin/
+obj/
+node_modules/
+*.user
+.vs/
+TestResults/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Facilitator build material and reference sources (public downloads live in starter/)
+event-checkin-app/
+solutions/
