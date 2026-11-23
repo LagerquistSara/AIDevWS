@@ -1,6 +1,6 @@
 # Lab 4 — Your first Dataverse plugin: duplicate and capacity rules
 
-**Time:** 40 minutes  
+**Time:** 35 minutes  
 **Goal:** understand when synchronous server-side logic is appropriate, and let GitHub Copilot Chat write, build, test and register a small plugin while you review the plan and verify the result.
 
 ## Before you start
@@ -42,7 +42,7 @@ A synchronous PreOperation plugin runs in the Dataverse transaction and can reje
 
 > **Teaching-only note.** In production, make the check safe by serializing on the parent Event. For example, update the Event row first in the same transaction, so a second registration for that event waits for the first. Then count all relevant registrations, whatever the calling user can see. The lab code skips this step to keep the exercise short.
 
-## Part A — Compare approaches in Ask mode (8 min)
+## Part A — Compare approaches in Ask mode (5 min)
 
 1. Start a **new chat** with the **+** at the top of the Chat view. Lab 3's long conversation would only distract GitHub Copilot here, and your workspace instructions still apply in the new chat.
 2. Select the **+** at the bottom left of the chat box, choose **Agent…**, and then choose **Ask**. Ask mode answers questions without making changes, which is all you need for a discussion.
@@ -63,7 +63,7 @@ A synchronous PreOperation plugin runs in the Dataverse transaction and can reje
 
    > Inspect this plugin starter and the Event Check-in schema. Propose the smallest implementation and unit tests for duplicate active registrations and sequential capacity handling, using PreOperation on Registration Create, and on Update only when Event, Contact or Status changes, with a pre-image named PreImage. Explain which statuses count and how the update path avoids counting the current row. Show me the plan before you edit any files.
 
-   > **Why Agent now, if this is still planning?** Copilot can inspect the starter and your schema, then implement the plan in the same chat. Ask mode can inspect files too, but Agent can make the changes. Review its plan and proposed actions before allowing it to proceed.
+   > **Why Agent now, if this is still planning?** Copilot can inspect the starter and your schema, then implement the plan in the same chat. Ask mode can inspect files too, but Agent can make the changes. Review its plan and proposed actions before allowing it to proceed. For bigger changes, you can instead type `/plan` to start the built-in Plan agent, which asks questions and writes a plan for you to review before anything is built.
 
 2. GitHub Copilot may ask you a few questions before it starts. The questions can differ from person to person, but the answers are already in this lab: use the [Scenario](#scenario) and the registration card. **Don't just accept the recommended answer** — check it. For example:
 
@@ -129,7 +129,7 @@ Registering a plugin means creating a few records in Dataverse: the **plug-in as
 
 > **Why a registration file?** It documents exactly how the plugin is registered, so you or GitHub Copilot can repeat or remove the registration later — in this environment or another one — without guessing.
 
-## Part D — Test in the app (10 min)
+## Part D — Test in the app (8 min)
 
 1. Open the Event Check-in app in [Power Apps](https://make.powerapps.com/) in the same environment.
 2. Test sequentially:

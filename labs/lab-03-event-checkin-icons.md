@@ -1,6 +1,6 @@
 # Lab 3 — Improve the Event Check-in app with the app-builder skill
 
-**Time:** 50 minutes  
+**Time:** 40 minutes  
 **Goal:** use a plugin you installed in Lab 1 — Microsoft's **model-apps** plugin and its `/model-apps:app-builder` skill — to improve a model-driven app that is already deployed: give its tables proper icons and fill it with sample data. You describe the change, GitHub Copilot plans it, and nothing changes in your environment until you approve the plan.
 
 ## What you will have after this lab
@@ -20,7 +20,9 @@
 - `/model-apps:app-builder` writes its files in the workspace. That is expected; you review them before anything is applied.
 - Choose a capable model in the model picker under the Chat input box. The model-apps plugin recommends against lightweight models for this skill.
 
-## Part A — Import the solution (8 min)
+## Part A — Import the solution (10 min)
+
+> **In the workshop** you start Part A just before lunch, so the import can run while you eat.
 
 1. Download [`EventCheckIn_1_0_0_0.zip`](https://github.com/LagerquistSara/AIDevWS/raw/main/starter/EventCheckIn_1_0_0_0.zip) from the workshop repository. Save it anywhere except inside `UG Workshop`, for example in **Downloads**.
 2. Open [Power Apps](https://make.powerapps.com/) and check the environment name in the top-right corner. It must be your workshop **developer** environment.
@@ -35,7 +37,7 @@
 
 > **Publish once before updating icons:** `/model-apps:app-builder` needs to recognise the existing app as published so it can reuse it. If the app has never been published, the build may try to create a duplicate instead of updating it.
 
-## Part B — Inspect the app and record what you find (7 min)
+## Part B — Inspect the app and record what you find (5 min)
 
 1. In Chat, start a **new chat** with **+** and select **Agent** mode.
 2. Type `/model-apps:app-builder` followed by your request:
@@ -49,7 +51,7 @@
 
 The skill may also prepare a technical app spec behind the scenes. The Markdown summary is for you to read; you do not need to edit that spec yourself.
 
-## Part C — Ask for icons and sample data, and review the plan (20 min)
+## Part C — Ask for icons and sample data, and review the plan (15 min)
 
 1. In the same chat, describe what you want:
 
@@ -91,7 +93,7 @@ The skill may also prepare a technical app spec behind the scenes. The Markdown 
 
 **Keep is not deployment:** selecting **Keep** accepts the local files. When you say **“Apply it”**, `/model-apps:app-builder` creates and publishes the SVG web resources in the Event Check-in solution and assigns them as the tables' vector icons.
 
-## Part D — Apply and check the result (15 min)
+## Part D — Apply and check the result (10 min)
 
 1. `/model-apps:app-builder` applies the changes, publishes them and checks the result. Wait for its summary.
 

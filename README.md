@@ -1,6 +1,6 @@
 # Agent-assisted Power Platform workshop
 
-**DynUG Høstkonferanse · 24 November 2026 · 10:00–15:10**
+**DynUG Høstkonferanse · 24 November 2026 · 10:00–14:45**
 
 This workshop is for Power Platform makers and professionals who want to work with VS Code and GitHub Copilot without needing to become full-time developers. Slides and lab instructions are in English; discussion can be in English or Swedish.
 
@@ -9,7 +9,7 @@ This workshop is for Power Platform makers and professionals who want to work wi
 - Participants: complete [pre-work](labs/lab-00-prework.md) before the workshop, then follow Labs 1–5 in order, including Lab 3b. Labs 6 and 7 are optional.
 - **Scope:** we replace the Maker Portal with an agent-assisted way of working. Dataverse, solutions, security and ALM stay the same. Licensing for building solutions is not covered.
 - **Read it. Get it. Then run it.** The labs are not a race. The text between the prompts is the lesson. Guess what a prompt will do before you send it, review before you select Keep, and make sure you can explain what you built.
-- Event Check-in app: you import it in [Lab 3](labs/lab-03-event-checkin-icons.md). Demo data is generated through the prompt in [Lab 3, Part C](labs/lab-03-event-checkin-icons.md#part-c--ask-for-icons-and-sample-data-and-review-the-plan-20-min).
+- Event Check-in app: you import it in [Lab 3](labs/lab-03-event-checkin-icons.md). Demo data is generated through the prompt in [Lab 3, Part C](labs/lab-03-event-checkin-icons.md#part-c--ask-for-icons-and-sample-data-and-review-the-plan-15-min).
 
 ## Labs
 
@@ -17,11 +17,11 @@ This workshop is for Power Platform makers and professionals who want to work wi
 |---|---|---:|
 | 0 | Pre-work and environment check | 20–30 min before the event, plus approval lead time |
 | 1 | Install and inspect Power Platform plugins | 15 min |
-| 2 | Your workspace: folder, MCP servers, sign in to your environment | 35 min |
-| 3 | Improve the Event Check-in app with the app-builder skill (icons and sample data) | 50 min |
-| [3b](labs/lab-03b-check-in-desk.md) | Build and test a Check-in desk generative page | 30 min |
-| 4 | Build and test a Dataverse plugin | 40 min |
-| 5 | Make a custom agent and skill | 25 min |
+| 2 | Your workspace: folder, MCP servers, sign in to your environment | 30 min |
+| 3 | Improve the Event Check-in app with the app-builder skill (icons and sample data) | 40 min |
+| [3b](labs/lab-03b-check-in-desk.md) | Build and test a Check-in desk generative page | 25 min |
+| 4 | Build and test a Dataverse plugin | 35 min |
+| 5 | Make a custom agent and skill | 20 min |
 | 6 | Optional: create a Copilot Studio agent from VS Code | 30 min, take-home/fast finishers |
 | [7](labs/lab-07-challenges.md) | Optional: challenges — confetti, registration counts, waitlist promotion and more | Any time, take-home/fast finishers |
 

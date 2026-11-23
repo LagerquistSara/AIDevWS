@@ -1,6 +1,6 @@
 # Lab 3b — Build a Check-in desk generative page
 
-**Time:** 30 minutes
+**Time:** 25 minutes
 **Goal:** use `/model-apps:genpage` to build, deploy and test a working page inside the existing Event Check-in model-driven app.
 
 > **Why genpage and not app-builder?** `/model-apps:app-builder` builds or changes a whole app: tables, forms, views and navigation. `/model-apps:genpage` adds a single generative page to an app that already exists, and places it in that app's navigation. That is what this lab does.
@@ -68,7 +68,7 @@ You finish with a **Check-in desk** navigation entry where staff can select an e
 
 8. Review the page plan GitHub Copilot presents in Chat. It should add one page to the existing Event Check-in app and its navigation, reuse the existing tables and columns, and create no new tables or sample data. Do not approve it yet.
 
-## Part B — Build and deploy the page (10 min)
+## Part B — Build and deploy the page (8 min)
 
 1. In the same chat, approve the page plan. If GitHub Copilot shows a Yes/No question, select **Something else** and enter this reply:
 
@@ -81,7 +81,7 @@ You finish with a **Check-in desk** navigation entry where staff can select an e
 
 > 🤖 **Copilot offers to test the page in a browser?** The model-apps plugin includes Playwright, so the agent can open its own browser and click through your page. That's cool to watch, but you'll need to sign in there yourself, and it changes real records. Do Part C yourself first, then let it try if you're curious.
 
-## Part C — Test with the existing demo data (10 min)
+## Part C — Test with the existing demo data (7 min)
 
 1. Select an event that has registrations. Confirm the page shows its attendees and statuses.
 

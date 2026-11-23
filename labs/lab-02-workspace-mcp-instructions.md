@@ -1,6 +1,6 @@
 # Lab 2 — Your workspace: connect GitHub Copilot to your environment
 
-**Time:** 35 minutes
+**Time:** 30 minutes
 **Goal:** set up a workspace folder where GitHub Copilot can look up Microsoft documentation, read your Dataverse environment and use the Power Platform plugins from Lab 1.
 
 ## What you will have after this lab
@@ -116,7 +116,7 @@ These are separate connections:
    - the environment is your **workshop** environment, not production;
    - **PAC CLI and Azure CLI use the same account**. If they differ, ask GitHub Copilot to sign in to Azure CLI again with the right account.
 
-## Part D — Try it (10 min)
+## Part D — Try it (5 min)
 
 Ask one question at a time in **Agent** mode. Under each answer, expand the tool calls to see which server or command GitHub Copilot used.
 

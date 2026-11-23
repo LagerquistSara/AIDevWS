@@ -1,9 +1,9 @@
 # Lab 5 — Build your own agent and skill
 
-**Time:** 25 minutes  
+**Time:** 20 minutes  
 **Goal:** understand how a custom agent and a skill change what GitHub Copilot does, by building and testing one of each.
 
-## Part A — Create a Requirements Coach (10 minutes)
+## Part A — Create a Requirements Coach (8 minutes)
 
 A custom agent is a Markdown file that gives GitHub Copilot a role, instructions and a limited set of tools. You ask the default agent to write it.
 
@@ -41,7 +41,7 @@ Now verify where VS Code found your agent:
 
    > **Workspace or user agent?** An agent in `.github/agents` belongs to this workspace. It appears in the agent picker only when the `UG Workshop` folder is open, and anyone who gets the folder gets the agent too. To use an agent in all your workspaces, create it under **User** on the **Configure Custom Agents** page instead. User agents are stored in your VS Code profile, so only you have them.
 
-## Part B — Create a table-icons skill (15 minutes)
+## Part B — Create a table-icons skill (12 minutes)
 
 An agent is a role you choose. A skill is know-how that GitHub Copilot loads by itself when a task needs it. In Lab 3, `/model-apps:app-builder` drew your table icons using Microsoft's rules. Now you write stricter rules for a proper table icon in a skill, and see what happens when Copilot reviews the same icons with them.
 
