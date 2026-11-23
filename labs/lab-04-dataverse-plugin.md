@@ -87,7 +87,7 @@ A synchronous PreOperation plugin runs in the Dataverse transaction and can reje
 
    Wait until it says that the build succeeded and **all tests passed**. If it didn't build or run the tests, ask: *"Build the solution and run the unit tests."*
 
-   > **Stuck?** If Copilot still has failing tests after a few attempts, don't lose your lab time on it. Download the finished code [`lab-04-solution.zip`](https://github.com/LagerquistSara/AIDevWS/raw/main/starter/lab-04-solution.zip), unzip it over your `lab-04-plugin` folder, and continue with Part C.
+   > **Stuck?** If the build or tests still fail after a few attempts, ask the facilitator for help. Do not register the plugin until the build succeeds and the tests pass.
 
 5. Now make sure you understand what was tested. Ask: *"List each test in plain language: what situation does it try, and what should happen?"* Compare the answers with the [Scenario](#scenario). Is anything missing?
 
@@ -163,7 +163,7 @@ You have reviewed the generated implementation and passing tests, checked `plugi
 |---|---|
 | GitHub Copilot types the command but nothing runs | Check that **Agent** mode is selected and look in Chat for the **Allow** button. |
 | Build fails with a missing SDK | Check that the .NET 10 SDK is installed (Lab 0, section 3), then restart VS Code. |
-| Tests keep failing | Use the finished code `lab-04-solution.zip` from the workshop repository; do not let GitHub Copilot weaken the tests to make them pass. |
+| Tests keep failing | Ask the facilitator for help. Do not let GitHub Copilot weaken the tests to make them pass, and do not register until the build succeeds and the tests pass. |
 | Azure CLI says you are not signed in | Ask GitHub Copilot to sign you in again with `az login`, as in Lab 2, then continue. |
 | A request returns *403* or *not authorized* | You need the System Administrator or System Customizer role in the environment. Check that the requests use your workshop environment. |
 | `sara_registration` is not found | The Event Check-in solution is not imported in this environment, or `plugin-registration.json` points to another environment. Check Lab 3 and the URL. |

@@ -34,8 +34,7 @@ You do **not** need to download or copy the whole starter folder. Use each item 
 | MCP configuration | Copy the JSON directly from [Lab 2](labs/lab-02-workspace-mcp-instructions.md) into Chat to create `.vscode/mcp.json`. No separate template is needed. |
 | [copilot-instructions.md](starter/copilot-instructions.md) | Optional Lab 2 exercise: copy its contents into `.github/copilot-instructions.md` for automatic project guidance. It is not required for MCP or sign-in. |
 | [EventCheckIn_1_0_0_0.zip](starter/EventCheckIn_1_0_0_0.zip) | Lab 3: import into your developer environment. Unmanaged solution, without data. |
-| [lab-04-plugin.zip](starter/lab-04-plugin.zip) | Lab 4: unzip into your workshop workspace. Contains the plugin project and test scaffolding; you do not need the unzipped copy from this repository as well. |
-| [lab-04-solution.zip](starter/lab-04-solution.zip) | Lab 4, only if you are stuck: the finished plugin code with passing tests. |
+| [lab-04-plugin.zip](starter/lab-04-plugin.zip) | Lab 4: unzip into your workshop workspace. Contains the plugin project and test scaffolding. |
 
 ## Important safety and preparation notes
 
